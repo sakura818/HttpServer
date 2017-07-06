@@ -1,5 +1,4 @@
 package example;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,6 +75,9 @@ public class Main extends HttpServlet {
 
       // アプリケーションスコープにつぶやきリストを保存
       application.setAttribute("mutterList", mutterList);
+    } else {
+      //エラーメッセージをリクエストスコープに保存
+      request.setAttribute("errorMsg", "つぶやきが入力されていません");
     }
 
     // メイン画面にフォワード
