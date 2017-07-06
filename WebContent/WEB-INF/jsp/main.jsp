@@ -19,10 +19,10 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 <h1>どこつぶメイン</h1>
 <p>
 <%= loginUser.getName() %>さん、ログイン中
-<a href="/docoTsubu/Logout">ログアウト</a>
+<a href="/example/Logout">ログアウト</a>
 </p>
-<p><a href="/docoTsubu/Main">更新</a></p>
-<form action="/docoTsubu/Main" method="post">
+<p><a href="/example/Main">更新</a></p>
+<form action="/example/Main" method="post">
 <input type="text" name="text">
 <input type="submit" value="つぶやく">
 </form>
