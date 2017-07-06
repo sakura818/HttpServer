@@ -40,7 +40,7 @@ public class Main extends HttpServlet {
     User loginUser = (User) session.getAttribute("loginUser");
     if (loginUser == null) { // ログインしていない場合
       // リダイレクト
-      response.sendRedirect("/docoTsubu/");
+      response.sendRedirect("/example/");
     } else { // ログイン済みの場合
       // フォワード
       RequestDispatcher dispatcher =
